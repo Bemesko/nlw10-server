@@ -1,4 +1,9 @@
 import Fastify from 'fastify'
+import { PrismaClient } from '@prisma/client'
+
+const prisma = new PrismaClient({
+    log: ['query']
+})
 
 //TODO: read from config file or env variable
 let applicationPort = 3333
