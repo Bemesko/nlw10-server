@@ -1,5 +1,6 @@
 import Fastify from 'fastify'
 
+//TODO: read from config file or env variable
 let applicationPort = 3333
 
 async function bootstrap() {
