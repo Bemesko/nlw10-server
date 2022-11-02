@@ -24,7 +24,7 @@ async function bootstrap() {
         return { poolCount }
     })
 
-    await fastify.listen({ port: applicationPort, host: '0.0.0.0' })
+    await fastify.listen({ port: applicationPort })
 }
 
 bootstrap()
